@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg"
+import "./App.css"
+import Contador from "./Contador"
+import Form from "./Form"
+import FormFunc from "./FormFunc"
+import {
+  AnimationEvents,
+  ClipboardEvents,
+  CompositionEvents,
+  FocusEvents,
+  FormEvents,
+  GenericEvents,
+  ImageEvents,
+  MediaEvents,
+  MouseWheelEvents,
+  OtherEvents,
+  PointerEvents,
+  SelectionEvents,
+  TouchEvents,
+  TransitionEvents,
+  UIEvents,
+} from "./events"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <AnimationEvents /> */}
+      {/* <ClipboardEvents /> */}
+      {/* <CompositionEvents /> */}
+      {/* <FocusEvents /> */}
+      {/* <FormEvents /> */}
+      {/* <GenericEvents /> */}
+      {/* <ImageEvents /> */}
+      {/* <MediaEvents /> */}
+      {/* <MouseWheelEvents /> */}
+      {/* <OtherEvents /> */}
+      {/* <PointerEvents /> */}
+      {/* <SelectionEvents /> */}
+      {/* <TouchEvents /> */}
+      {/* <TransitionEvents /> */}
+      {/* <UIEvents /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
