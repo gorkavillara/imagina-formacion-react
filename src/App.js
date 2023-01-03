@@ -18,6 +18,7 @@ import {
   ScopedCSS,
   StyleAttribute,
   StyledComponents,
+  Tailwindcss
 } from "./styles"
 
 function App() {
@@ -37,8 +38,9 @@ function App() {
       {/* <GlobalCSS /> */}
       {/* <MaterialUI /> */}
       {/* <ScopedCSS /> */}
-      <StyleAttribute />
+      {/* <StyleAttribute /> */}
       {/* <StyledComponents /> */}
+      <Tailwindcss />
     </div>
   )
 }
