@@ -1,0 +1,8 @@
+.estilo-global {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #2b2b2b;
+    width: 100%;
+    color: white;
+}

@@ -1,8 +1,12 @@
-import React from 'react'
+import React from "react"
 
 const DobleAnd = () => {
+  const error = "Ha ocurrido un error"
   return (
-    <div>DobleAnd</div>
+    <div>
+      <p>El servidor ha retornado un valor</p>
+      {error && <span style={{ color: "red" }}>ERROR: {error}</span>}
+    </div>
   )
 }
 

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react"
+import Loading from "./Loading"
 
 const Ternarias = () => {
-  return (
-    <div>Ternarias</div>
-  )
+  const cargando = true
+  
+  return cargando 
+    ? <Loading /> 
+    : <div>Aquí tienes tus datos</div>
 }
 
 export default Ternarias
