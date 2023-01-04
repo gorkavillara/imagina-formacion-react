@@ -1,18 +1,28 @@
-import React, { useRef } from "react"
+import React, { useState } from "react"
 
 const FormFunc = () => {
-  const eventoPadre = () => {
-    console.log("Has hecho clic en el padre")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Aquí desarrollamos toda la lógica del envío del formulario
   }
-  const eventoHijo = (event) => {
-    event.stopPropagation() // Sin este método se lanzaría también el evento padre
-    console.log("Has hecho clic en el hijo")
-  }
-
   return (
-    <div onClick={eventoPadre}>
-      <button onClick={eventoHijo}>Hijo</button>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="Tu nombre de usuario"
+      />
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Tu contraseña"
+      />
+      <button type="submit">Enviar</button>
+    </form>
   )
 }
 

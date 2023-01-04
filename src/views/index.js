@@ -7,5 +7,6 @@ import Ternarias3 from "./Ternarias3"
 import MiVista from "./MiVista"
 import Fragments from "./Fragments"
 import DivsInnecesarios from "./DivsInnecesarios"
+import ListasEnReact from "./ListasEnReact"
 
-export { BifurcacionesIf, DobleAnd, DobleAndIncorrecto, Ternarias, Ternarias2, Ternarias3, MiVista, Fragments, DivsInnecesarios }
+export { BifurcacionesIf, DobleAnd, DobleAndIncorrecto, Ternarias, Ternarias2, Ternarias3, MiVista, Fragments, DivsInnecesarios, ListasEnReact }

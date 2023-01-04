@@ -10,6 +10,7 @@ import {
   Ternarias3,
   Fragments,
   DivsInnecesarios,
+  ListasEnReact
 } from "./views"
 import {
   Bootstrap,
@@ -24,7 +25,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <Sass />
+      <ListasEnReact />
     </div>
   )
 }
