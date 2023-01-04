@@ -21,11 +21,12 @@ import {
   StyledComponents,
   Sass,
 } from "./styles"
+import FormulariosFormik from "./FormulariosFormik"
 
 function App() {
   return (
     <div className="App">
-      <ListasEnReact />
+      <FormulariosFormik />
     </div>
   )
 }

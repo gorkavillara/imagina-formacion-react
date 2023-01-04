@@ -9,8 +9,8 @@ const ListasEnReact = () => {
   ]
   return (
     <ul>
-      {listaAlumnos.map((alumno) => (
-        <li key={alumno.id}>
+      {listaAlumnos.map((alumno, index) => (
+        <li key={index}>
           {alumno.nombre} - {alumno.nota.toFixed(2)}
         </li>
       ))}
