@@ -37,8 +37,8 @@ function App() {
       {/* <GlobalCSS /> */}
       {/* <MaterialUI /> */}
       {/* <ScopedCSS /> */}
-      <StyleAttribute />
-      {/* <StyledComponents /> */}
+      {/* <StyleAttribute /> */}
+      <StyledComponents />
     </div>
   )
 }
