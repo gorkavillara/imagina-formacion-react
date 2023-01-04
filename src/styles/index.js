@@ -4,6 +4,7 @@ import MaterialUI from "./MaterialUI"
 import ScopedCSS from "./ScopedCSS"
 import StyleAttribute from "./StyleAttribute"
 import StyledComponents from "./StyledComponents"
+import Sass from "./Sass"
 
 export {
   Bootstrap,
@@ -12,4 +13,5 @@ export {
   ScopedCSS,
   StyleAttribute,
   StyledComponents,
+  Sass,
 }

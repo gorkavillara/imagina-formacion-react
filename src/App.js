@@ -18,27 +18,13 @@ import {
   ScopedCSS,
   StyleAttribute,
   StyledComponents,
+  Sass,
 } from "./styles"
 
 function App() {
   return (
     <div className="App">
-      {/* <BifurcacionesIf /> */}
-      {/* <DobleAnd /> */}
-      {/* <DobleAndIncorrecto /> */}
-      {/* <Ternarias /> */}
-      {/* <Ternarias2 /> */}
-      {/* <Ternarias3 /> */}
-      {/* <MiVista /> */}
-      {/* <Fragments /> */}
-      {/* <DivsInnecesarios /> */}
-
-      {/* <Bootstrap /> */}
-      {/* <GlobalCSS /> */}
-      {/* <MaterialUI /> */}
-      {/* <ScopedCSS /> */}
-      <StyleAttribute />
-      {/* <StyledComponents /> */}
+      <Sass />
     </div>
   )
 }
