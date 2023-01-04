@@ -61,3 +61,12 @@ p.texto {
 .doble {
   font-size: 2rem;
 }
+
+.correcto {
+  color: green;
+  font-weight: 600;
+}
+.incorrecto {
+  color: red;
+  font-weight: 600;
+}
