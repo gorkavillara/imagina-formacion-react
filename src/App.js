@@ -35,9 +35,9 @@ function App() {
 
       {/* <Bootstrap /> */}
       {/* <GlobalCSS /> */}
-      {/* <MaterialUI /> */}
+      <MaterialUI />
       {/* <ScopedCSS /> */}
-      <StyleAttribute />
+      {/* <StyleAttribute /> */}
       {/* <StyledComponents /> */}
     </div>
   )
