@@ -33,11 +33,11 @@ function App() {
       {/* <Fragments /> */}
       {/* <DivsInnecesarios /> */}
 
-      {/* <Bootstrap /> */}
+      <Bootstrap />
       {/* <GlobalCSS /> */}
       {/* <MaterialUI /> */}
       {/* <ScopedCSS /> */}
-      <StyleAttribute />
+      {/* <StyleAttribute /> */}
       {/* <StyledComponents /> */}
     </div>
   )
