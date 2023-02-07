@@ -19,20 +19,21 @@ import {
   StyleAttribute,
   StyledComponents,
 } from "./styles"
+import RetornoMultiple from "./views/RetornoMultiple"
 
 function App() {
   return (
     <div className="App">
+      {/* <MiVista /> */}
       {/* <BifurcacionesIf /> */}
-      {/* <DobleAnd /> */}
-      {/* <DobleAndIncorrecto /> */}
       {/* <Ternarias /> */}
       {/* <Ternarias2 /> */}
       {/* <Ternarias3 /> */}
-      {/* <MiVista /> */}
+      {/* <DobleAnd /> */}
+      {/* <DobleAndIncorrecto /> */}
       {/* <Fragments /> */}
       {/* <DivsInnecesarios /> */}
-
+      {/* <RetornoMultiple /> */}
       {/* <Bootstrap /> */}
       {/* <GlobalCSS /> */}
       {/* <MaterialUI /> */}
