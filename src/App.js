@@ -1,27 +1,25 @@
 import "./App.css";
-import Principal from "./components/Principal";
-// import Contador from "./components/Contador";
-// import ComponenteProps from "./components/ComponenteProps";
-// import ComponenteClase from "./components/ComponenteClase";
-// import ComponenteFuncional from "./components/ComponenteFuncional";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPosts } from "./features/postsSlice";
+
 
 function App() {
-  // const miElemento = (
-  //   <p id="miElemento" className="claseDeMiElemento">
-  //     Este es mi elemento
-  //   </p>
-  // );
+  const dispatch = useDispatch()
+  const posts = useSelector((state) => state.posts.posts);
+  const status = useSelector((state) => state.posts.status);
+  const error = useSelector((state) => state.posts.error);
+
+  const buscarPosts = () => {
+    dispatch(fetchPosts())
+  }
   return (
-    <div className="App">
-      <Principal />
-      {/* <Contador /> */}
-      {/* {miElemento} */}
-      {/* <ComponenteClase texto="Hola mundo!" /> */}
-      {/* <ComponenteFuncional texto="Hola componente funcional" /> */}
-      {/* <ComponenteProps
-        titulo="Hola mundo"
-        onClick={() => console.log("Hola mundo")}
-      /> */}
+    <div>
+      {status === 'loading' && <div>Cargando...</div>}
+      {status === 'failed' && <div>{error}</div>}
+      {posts.map((post) => (
+        <div key={post.id}>{post.title}</div>
+      ))}
+      <button onClick={buscarPosts}>Buscar Posts</button>
     </div>
   );
 }
