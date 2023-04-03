@@ -1,27 +1,16 @@
-import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts } from "./features/postsSlice";
+import React, { useState, useCallback } from 'react';
 
+function MyComponent() {
+  const [count, setCount] = useState(0);
 
-function App() {
-  const dispatch = useDispatch()
-  const posts = useSelector((state) => state.posts.posts);
-  const status = useSelector((state) => state.posts.status);
-  const error = useSelector((state) => state.posts.error);
+  const increment = useCallback(() => {
+    setCount(count + 1);
+  }, [count]);
 
-  const buscarPosts = () => {
-    dispatch(fetchPosts())
-  }
   return (
     <div>
-      {status === 'loading' && <div>Cargando...</div>}
-      {status === 'failed' && <div>{error}</div>}
-      {posts.map((post) => (
-        <div key={post.id}>{post.title}</div>
-      ))}
-      <button onClick={buscarPosts}>Buscar Posts</button>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
     </div>
   );
 }
-
-export default App;
