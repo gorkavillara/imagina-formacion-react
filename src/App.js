@@ -1,16 +1,14 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react'
 
-function MyComponent() {
-  const [count, setCount] = useState(0);
-
-  const increment = useCallback(() => {
-    setCount(count + 1);
-  }, [count]);
+function App() {
+  
+  const apiUrl = process.env.REACT_APP_API_URL
 
   return (
     <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
+      <p>La URL de la API es: {apiUrl}</p>
     </div>
-  );
+  )
 }
+
+export default App
