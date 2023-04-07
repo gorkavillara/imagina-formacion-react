@@ -1,12 +1,10 @@
 import React from 'react'
+import Login from "./views/Login"
 
 function App() {
-  
-  const apiUrl = process.env.REACT_APP_API_URL
-
   return (
     <div>
-      <p>La URL de la API es: {apiUrl}</p>
+      <Login />
     </div>
   )
 }
