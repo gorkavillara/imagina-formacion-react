@@ -7,6 +7,9 @@ function Bootstrap() {
       <div className="spinner-grow" role="status">
         <span className="visually-hidden">Loading...</span>
       </div>
+      <div className="spinner-grow text-success" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
     </div>
   );
 }
