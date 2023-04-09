@@ -8,28 +8,14 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [users, setUsers] = useState([]);
 
-  const fetchUsers = async () => {
-    setLoading(true);
+  const fetchUsers = () => {
+    setLoading(true)
     // Buscar los usuarios en la api
     // Asignarlos a users con setUsers
-
-    // try {
-    //   const res = await axios.get(url)
-
-    //   console.log(res)
-    //   setUsers(res.data)
-    //   setLoading(false)
-    // } catch(e) {
-    //   console.error("Ha habido un error", e)
-    // }
-
-    const res = await axios
-      .get(url)
-      .catch((error) => console.error("Ha habido un error", error));
-    
-    console.log(res);
-    setUsers(res.data);
-    setLoading(false);
+    axios.get(url)
+      .then(res => setUsers(res.data))
+      .catch(error => console.error(error))
+      .finally(() => setLoading(false))
   };
 
   useEffect(() => {
@@ -40,7 +26,7 @@ function App() {
     <div className="App">
       {loading ? (
         <h2>CARGANDO...</h2>
-      ) : users.length === 0 ? (
+      ) : (users.length === 0 ? (
         <h1>Todavía no hay usuarios</h1>
       ) : (
         <ul>
@@ -48,7 +34,7 @@ function App() {
             <li key={user.id}>{user.name}</li>
           ))}
         </ul>
-      )}
+      ))}
     </div>
   );
 }
