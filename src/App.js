@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function App() {
-  
-  const apiUrl = process.env.REACT_APP_API_URL
+  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <p>La URL de la API es: {apiUrl}</p>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
