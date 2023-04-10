@@ -1,8 +1,11 @@
 import { useState } from "react"
+import axios from "axios"
 
 const LoginButton = () => {
     const [loggedIn, setLoggedIn] = useState(false)
-    const login = () => {
+    const login = async () => {
+        const res = await axios.get("https://jsonplaceholder.typicode.com/users")
+        // console.log(res.data)
         setLoggedIn(true)
     }
     return (

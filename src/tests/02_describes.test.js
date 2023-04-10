@@ -6,5 +6,6 @@ describe("Nombre del grupo de tests", () => {
     })
     test("Segundo test del grupo de tests", () => {
         // Definimos los tests
+        expect(true).toBeTruthy()
     })
 })
